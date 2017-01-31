@@ -15,12 +15,15 @@ public class RotateBehaviour : MonoBehaviour {
     {
         floorMask = LayerMask.GetMask("Floor");
         //hipRigidbody = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update () {
-        Turning();
-
+        if (anim.GetBool("Attack"))
+        {
+            Turning();
+        }
     }
 
 

@@ -13,8 +13,8 @@ public class FollowPlayer : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        transform.position = new Vector3(player.transform.position.x + x, player.transform.position.y + y, player.transform.position.z + z);
-        transform.LookAt(player.transform);
+       // transform.position = new Vector3(player.transform.position.x + x, player.transform.position.y + y, player.transform.position.z + z);
+        //transform.LookAt(player.transform);
         offset = player.transform.position - transform.position;
     }
 
@@ -24,7 +24,7 @@ public class FollowPlayer : MonoBehaviour
 
         transform.position = player.transform.position - offset;
 
-        if (Input.GetButtonDown("Fire2"))
+       /* if (Input.GetButtonDown("Fire2"))
         {
             last_angle += 45.0f;
             transform.RotateAround(player.transform.position, Vector3.up, 45.0f);
@@ -37,6 +37,6 @@ public class FollowPlayer : MonoBehaviour
             transform.RotateAround(player.transform.position, Vector3.up, -45.0f);
             transform.LookAt(player.transform);
             offset = player.transform.position - transform.position;
-        }
+        }*/
     }
 }

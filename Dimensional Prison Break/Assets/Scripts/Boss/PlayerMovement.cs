@@ -35,15 +35,19 @@ public class PlayerMovement : MonoBehaviour
     void Move(float h,float v)
     {
         movement.Set(h, 0, v);
-        movement = movement.normalized * speed * Time.fixedDeltaTime;
+        movement = movement.normalized * -speed * Time.fixedDeltaTime;
         playerRigidbody.MovePosition(transform.position + movement);
 
+
+        if(movement.magnitude > 0.01f)
+        {
         Vector3 playerToMouse = movement;
         playerToMouse.y = 0f;
 
         Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
 
-        playerRigidbody.MoveRotation(newRotation);
+        playerRigidbody.MoveRotation(Quaternion.Slerp(transform.rotation,newRotation,0.5f));
+        }
     }
 
     void Turning()
@@ -52,9 +56,14 @@ public class PlayerMovement : MonoBehaviour
 
         RaycastHit floorHit;
 
-        if(Physics.Raycast(camRay,out floorHit, camRayLength, floorMask))
+        if (Physics.Raycast(camRay, out floorHit, camRayLength, floorMask))
         {
+            Vector3 playerToMouse = floorHit.point - transform.position;
+            playerToMouse.y = 0f;
 
+            Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
+
+            playerRigidbody.MoveRotation(newRotation);
         }
     }
 
