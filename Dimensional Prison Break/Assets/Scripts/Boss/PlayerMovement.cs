@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using GamepadInput;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 6f;
@@ -19,17 +19,12 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        float h = Input.GetAxisRaw("Horizontal");
-        float w = Input.GetAxisRaw("Vertical");
+        Vector2 w = GamePad.GetAxis(GamePad.Axis.LeftStick, GamePad.Index.One, true);
 
-        if(Input.GetButtonDown("Fire1"))
-        {
-            anim.SetTrigger("Attack");
-        }
 
-        Move(h, w);
+        Move(w.x, w.y);
         //Turning();
-        Animating(h, w);
+        Animating(w.x, w.y);
     }
 
     void Move(float h,float v)
