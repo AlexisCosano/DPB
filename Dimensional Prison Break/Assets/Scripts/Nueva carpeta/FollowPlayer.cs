@@ -3,12 +3,22 @@ using System.Collections;
 
 public class FollowPlayer : MonoBehaviour
 {
+    /// <summary>
+    /// Player al que estem seguint ara mateix
+    /// </summary>
     public Transform player;
-    float last_angle = 0.0f;
-    public int x = 10;
-    public int y = 10;
-    public int z = 10;
-    Vector3 offset;
+    
+    //float last_angle = 0.0f;
+    //public int x = 10;
+    //public int y = 10;
+    //public int z = 10;
+
+    /// <summary>
+    /// Distancia incial amb el player
+    /// </summary>
+    private Vector3 offset;
+
+    private Vector3 position;
 
     // Use this for initialization
     void Start()
@@ -21,8 +31,9 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        transform.position = player.transform.position - offset;
+        position = transform.position;
+        position.x = player.transform.position.x - offset.x;
+        transform.position = position;
 
        /* if (Input.GetButtonDown("Fire2"))
         {
