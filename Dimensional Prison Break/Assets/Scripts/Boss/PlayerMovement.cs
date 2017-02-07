@@ -22,6 +22,11 @@ public class PlayerMovement : MonoBehaviour
         Vector2 w = GamePad.GetAxis(GamePad.Axis.LeftStick, GamePad.Index.One, true);
 
 
+        if (GamePad.GetButtonDown(GamePad.Button.A, GamePad.Index.One))
+        {
+            anim.SetTrigger("Attack");
+        }
+
         Move(w.x, w.y);
         //Turning();
         Animating(w.x, w.y);
