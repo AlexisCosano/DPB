@@ -25,8 +25,10 @@ public class PlayerMovement : MonoBehaviour
         if (GamePad.GetButtonDown(GamePad.Button.A, GamePad.Index.One))
         {
             anim.SetTrigger("Attack");
+            playerRigidbody.velocity = Vector3.zero;
+            playerRigidbody.AddForce(movement.normalized* playerRigidbody.mass*4,ForceMode.Impulse);
         }
-
+        
         Move(w.x, w.y);
         //Turning();
         Animating(w.x, w.y);
@@ -35,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     void Move(float h,float v)
     {
         movement.Set(h, 0, v);
-        movement = movement.normalized * -speed * Time.fixedDeltaTime;
+        movement = movement.normalized * speed * Time.fixedDeltaTime;
         playerRigidbody.MovePosition(transform.position + movement);
 
 

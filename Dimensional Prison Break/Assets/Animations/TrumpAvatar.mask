@@ -7,4 +7,86 @@ AvatarMask:
   m_PrefabInternal: {fileID: 0}
   m_Name: TrumpAvatar
   m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-  m_Elements: []
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: trump_lp_model
+    m_Weight: 0
+  - m_Path: trump_rigCharRoot
+    m_Weight: 0
+  - m_Path: trump_rigCharRoot/BipTrump
+    m_Weight: 0
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis
+    m_Weight: 0
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump L Thigh
+    m_Weight: 0
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump L Thigh/BipTrump L
+      Calf
+    m_Weight: 0
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump L Thigh/BipTrump L
+      Calf/BipTrump L Foot
+    m_Weight: 0
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump L Thigh/BipTrump L
+      Calf/BipTrump L Foot/BipTrump L Toe0
+    m_Weight: 0
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump R Thigh
+    m_Weight: 0
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump R Thigh/BipTrump R
+      Calf
+    m_Weight: 0
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump R Thigh/BipTrump R
+      Calf/BipTrump R Foot
+    m_Weight: 0
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump R Thigh/BipTrump R
+      Calf/BipTrump R Foot/BipTrump R Toe0
+    m_Weight: 0
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      L Clavicle
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      L Clavicle/BipTrump L UpperArm
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      L Clavicle/BipTrump L UpperArm/BipTrump L Forearm
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      L Clavicle/BipTrump L UpperArm/BipTrump L Forearm/BipTrump L Hand
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      L Clavicle/BipTrump L UpperArm/BipTrump L Forearm/BipTrump L Hand/BipTrump L
+      Finger0
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      L Clavicle/BipTrump L UpperArm/BipTrump L Forearm/BipTrump L Hand/BipTrump L
+      Finger1
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      Neck
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      Neck/BipTrump Head
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      R Clavicle
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      R Clavicle/BipTrump R UpperArm
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      R Clavicle/BipTrump R UpperArm/BipTrump R Forearm
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      R Clavicle/BipTrump R UpperArm/BipTrump R Forearm/BipTrump R Hand
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      R Clavicle/BipTrump R UpperArm/BipTrump R Forearm/BipTrump R Hand/BipTrump R
+      Finger0
+    m_Weight: 1
+  - m_Path: trump_rigCharRoot/BipTrump/BipTrump Pelvis/BipTrump Spine/BipTrump Spine1/BipTrump
+      R Clavicle/BipTrump R UpperArm/BipTrump R Forearm/BipTrump R Hand/BipTrump R
+      Finger1
+    m_Weight: 1

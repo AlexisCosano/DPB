@@ -82,11 +82,19 @@ public class LaserShoot: MonoBehaviour
         {
             //ON collision
             gunLine.SetPosition(1, shootHit.point);
+            shootHit.collider.gameObject.SetActive(false);
         }
         else
         {
             gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
         }
+    }
+
+    //Perque torni a apareixer un cop mort
+    void RevivePlayer()
+    {
+        RaceManager.current.player.transform.position += Vector3.back * 5;
+        RaceManager.current.player.SetActive(true);
     }
 }
 
